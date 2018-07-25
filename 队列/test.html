@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script src="队列.js"></script>
+<script>
+	const q = new Queue();
+	q.enqueue("John");
+	q.enqueue("Jack");
+	q.enqueue("ele");
+	console.log(q.items);
+
+	q.print();
+	console.log(q.size()); //输出3
+	console.log(q.isEmpty()); //输出false
+	q.dequeue();
+	q.dequeue();
+	q.print();  
+
+
+	var priorityQueue = new PriorityQueue();
+	console.log(priorityQueue)
+	priorityQueue.enqueue("John", 2);
+	priorityQueue.enqueue("Jack", 1);
+	priorityQueue.enqueue("Camila", 1);
+	console.log(priorityQueue.__proto__.constructor.items)
+	priorityQueue.__proto__.constructor.print(); 
+</script>	
+</body>
+</html>
