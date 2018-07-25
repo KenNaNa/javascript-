@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script src="栈.js"></script>
+<script>
+	const v = new Stack();
+	console.log(v)
+	v.push(10);
+	console.log(v.items);
+
+	v.pop(10);
+	console.log(v.items);
+
+
+	console.log(v.isEmpty());
+
+	v.push(100);
+	console.log(v.items);
+
+
+	console.log(v.isEmpty());
+
+	v.clear();
+
+
+	console.log(v.isEmpty());
+
+	v.push(1000);
+	v.push(20);
+	v.push(100);
+	v.push(40);
+
+	v.print();
+
+
+	console.log(v.peek());
+	console.log(v.size());
+	console.log(v.items);
+</script>	
+</body>
+</html>
