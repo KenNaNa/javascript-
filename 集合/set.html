@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script src='Set.js'></script>	
+<script>
+	var obj = {
+		name : 'Ken',
+		age : 20,
+	}
+	console.log(Object.keys(obj))
+
+	var set = new Set();
+	set.add(1);
+	console.log(set.values()); //输出["1"]
+	console.log(set.has(1)); //输出true
+	console.log(set.size()); //输出1
+	set.add(2);
+	console.log(set.values()); //输出["1", "2"]
+	console.log(set.has(2)); //true
+	console.log(set.size()); //2
+	set.remove(1);
+	console.log(set.values()); //输出["2"]
+	set.remove(2);
+	console.log(set.values()); //输出[] 
+</script>
+</body>
+</html>
